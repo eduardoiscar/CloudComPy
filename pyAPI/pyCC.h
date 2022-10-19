@@ -24,7 +24,8 @@
 
 #include <QString>
 #include <vector>
-
+#include <sstream>
+ 
 #ifndef SCALAR_TYPE_DOUBLE
   #ifndef SCALAR_TYPE_FLOAT
     #define SCALAR_TYPE_FLOAT
@@ -40,7 +41,7 @@
 #include <ccCommandLineInterface.h>
 #include <Neighbourhood.h>
 #include <ccRasterGrid.h>
-
+#include "ccContourLinesGenerator.h"
 #include "optdefines.h"
 
 // --- for Python3 interface
