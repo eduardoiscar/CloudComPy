@@ -207,6 +207,7 @@ void export_ccGenericCloud(py::module &m0)
 		.export_values();
 
     py::class_<ccHObject>(m0, "ccHObject")
+        .def(py::init<QString, unsigned>(), py::arg("name")=QString(), py::arg("uniqueID")=0xFFFFFFFF)
         .def("setName", &ccHObject::setName, ccHObject_setName_doc)
         .def("getName", &ccHObject::getName, ccHObject_getName_doc)
 		.def("addChild", &addChild_py,
